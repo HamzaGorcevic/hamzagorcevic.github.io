@@ -38,40 +38,31 @@ export const info = {
 
     {
       emoji: "📧",
-      text: "johnsmith@gmail.com",
+      text: "hamzagorcevic.dev@gmail.com",
     },
   ],
   socials: [
     {
-      link: "https://facebook.com",
-      icon: "fa fa-facebook",
-      label: "facebook",
-    },
-    {
-      link: "https://instagram.com",
+      link: "https://www.instagram.com/hamza_gorcevic/",
       icon: "fa fa-instagram",
       label: "instagram",
     },
     {
-      link: "https://github.com",
+      link: "https://github.com/HamzaGorcevic",
       icon: "fa fa-github",
       label: "github",
     },
     {
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/hamza-gor%C4%8Devi%C4%87-112951246/",
       icon: "fa fa-linkedin",
       label: "linkedin",
     },
-    {
-      link: "https://twitter.com",
-      icon: "fa fa-twitter",
-      label: "twitter",
-    },
+
     // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
     // Just change the links so that they lead to your social profiles.
   ],
   bio: "Junior Web Developer able to build from concept to a Web Page, converting designs from PSD, PDF and Figma to HTML, CSS and JavaScript/TypeScript pages. Additionally, we have been using React framework to build web pages. Using React, Router and building web apps with good architecture.",
-  bio2: "Junior Web Developer able to build from concept to a Web Page, converting designs from PSD, PDF and Figma to HTML, CSS and JavaScript/TypeScript pages. Additionally, we have been using React framework to build web pages",
+  bio2: "Personal responsibilities include writing well-designed, well documented and efficient code using best practices.Experienced in Agile teamwork.",
   skills: {
     proficientWith: [
       "javascript",
@@ -115,31 +106,31 @@ export const info = {
     {
       title: "Project 2",
       live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      source: "https://github.com/HamzaGorcevic/Marvel-api-team-project",
       image: mock2,
     },
     {
       title: "Project 3",
       live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      source: "https://github.com/HamzaGorcevic/News-api-team",
       image: mock3,
     },
     {
       title: "Project 4",
       live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      source: "https://github.com/HamzaGorcevic/WebsiteMy",
       image: mock4,
     },
     {
       title: "Project 5",
       live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      source: "https://github.com/HamzaGorcevic/ReactExercise/tree/main/src",
       image: mock5,
     },
     {
       title: "Project 5",
       live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      source: "https://github.com/HamzaGorcevic/Movies-project",
       image: mock1,
     },
   ],
