@@ -25,13 +25,13 @@ export default function Home() {
         src={me}
         width={{ xs: "35vh", md: "40vh" }}
         height={{ xs: "35vh", md: "40vh" }}
-        borderRadius={"50%"}
+        borderRadius={"10px"}
         p={"0.75rem"}
         mb={{ xs: "1rem", sm: 0 }}
         mr={{ xs: 0, md: "2rem" }}
       />
       <Box>
-        <h1>
+        <h1 className={Style.name}>
           Hi, I'm{" "}
           <span
             style={{
@@ -42,12 +42,17 @@ export default function Home() {
           >
             {info.firstName}
           </span>
-          <span className={Style.hand}>🤚</span>
+          <span className={Style.hand}>🏴‍☠️</span>
         </h1>
         <h2>I'm Frontend Developer.</h2>
         <Box component={"ul"} p={"0.8rem"}>
           {info.miniBio.map((bio, index) => (
-            <EmojiBullet key={index} emoji={bio.emoji} text={bio.text} />
+            <EmojiBullet
+              key={index}
+              emoji={bio.emoji}
+              text={bio.text}
+              link={bio.link}
+            />
           ))}
         </Box>
         <Box

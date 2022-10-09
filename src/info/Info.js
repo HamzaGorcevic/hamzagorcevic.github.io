@@ -4,6 +4,7 @@ import mock2 from "../img/mock2.png";
 import mock3 from "../img/mock3.png";
 import mock4 from "../img/mock4.png";
 import mock5 from "../img/mock5.png";
+import cv from "../img/cv.pdf";
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -34,11 +35,18 @@ export const info = {
     {
       emoji: "🌎",
       text: "based in the Novi Pazar",
+      link: "",
     },
 
     {
       emoji: "📧",
       text: "hamzagorcevic.dev@gmail.com",
+      link: "",
+    },
+    {
+      emoji: "📝",
+      text: "My resume",
+      link: cv,
     },
   ],
   socials: [
@@ -93,10 +101,7 @@ export const info = {
       label: "anime",
       emoji: "🥷",
     },
-    {
-      label: "cooking",
-      emoji: "🌶",
-    },
+
     // Same as above, change the emojis to match / relate to your hobbies or interests.
     // You can also remove the emojis if you'd like, I just think they look cute :P
   ],
