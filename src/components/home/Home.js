@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Style from "./Home.module.scss";
 import me from "../../img/self.png";
 import classNames from "classnames";
@@ -6,8 +6,26 @@ import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
+import axios from "axios";
 
 export default function Home() {
+  const [quote, setQuote] = useState("");
+  useEffect(() => {
+    axios
+      .get("https://api.api-ninjas.com/v1/quotes?category=happines", {
+        headers: {
+          "X-Api-Key": "X-Api-Key=9PPstyccNokjqUydrLQZuw==G7kBDczOSVgc0ZlE",
+        },
+      })
+      .then((response) => {
+        // If request is good...
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log("error " + error);
+      });
+  }, []);
+
   return (
     <Box
       component={"main"}
@@ -17,19 +35,9 @@ export default function Home() {
       justifyContent={"center"}
       minHeight={"calc(100vh - 175px)"}
     >
-      <Box
-        className={classNames(Style.avatar, Style.shadowed)}
-        alt={"image of developer"}
-        style={{ background: info.gradient }}
-        component={"img"}
-        src={me}
-        width={{ xs: "35vh", md: "40vh" }}
-        height={{ xs: "35vh", md: "40vh" }}
-        borderRadius={"10px"}
-        p={"0.75rem"}
-        mb={{ xs: "1rem", sm: 0 }}
-        mr={{ xs: 0, md: "2rem" }}
-      />
+      <div className={Style.trapezoid}>
+        <img className={Style.box} src={me} alt="" />
+      </div>
       <Box>
         <h1 className={Style.name}>
           Hi, I'm{" "}
@@ -71,6 +79,11 @@ export default function Home() {
           ))}
         </Box>
       </Box>
+      <div className={Style.qoutesMain}>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi porro
+        hic blanditiis qui eaque provident laboriosam recusandae consectetur
+        accusantium saepe.
+      </div>
     </Box>
   );
 }
