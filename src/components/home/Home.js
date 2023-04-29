@@ -87,7 +87,9 @@ export default function Home() {
           </Box>
         </Box>
       </Box>
-      <div className={Style.qoutesMain}>"{quote.content}"</div>
+      <div className={Style.helper}>
+        <div className={Style.qoutesMain}>"{quote.content}"</div>
+      </div>
     </Box>
   );
 }

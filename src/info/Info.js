@@ -1,9 +1,9 @@
 import self from "../img/self.png";
-import mock1 from "../img/mock1.png";
-import mock2 from "../img/mock2.png";
-import mock3 from "../img/mock3.png";
-import mock4 from "../img/mock4.png";
-import mock5 from "../img/mock5.png";
+import marvel from "../img/marvel.png";
+import temp from "../img/temp.png";
+import movies from "../img/movies.png";
+import netflix from "../img/netflix.png";
+
 import cv from "../img/cv.pdf";
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
@@ -110,33 +110,28 @@ export const info = {
 
     {
       title: "Project 2",
-      live: "https://paytonpierce.dev",
+      live: "http://marvelhg.byethost16.com/?i=1",
       source: "https://github.com/HamzaGorcevic/Marvel-api-team-project",
-      image: mock2,
+      image: marvel,
     },
-    {
-      title: "Project 3",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/HamzaGorcevic/News-api-team",
-      image: mock3,
-    },
-    {
-      title: "Project 4",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/HamzaGorcevic/WebsiteMy",
-      image: mock4,
-    },
+
     {
       title: "Project 5",
-      live: "https://paytonpierce.dev",
+      live: "http://temperaturehg.epizy.com/?i=1",
       source: "https://github.com/HamzaGorcevic/ReactExercise/tree/main/src",
-      image: mock5,
+      image: temp,
     },
     {
       title: "Project 5",
-      live: "https://paytonpierce.dev",
+      live: "http://moviesimdb.infinityfreeapp.com/",
       source: "https://github.com/HamzaGorcevic/Movies-project",
-      image: mock1,
+      image: movies,
+    },
+    {
+      title: "Project 5",
+      live: "https://netflix-c8b62.web.app/",
+      source: "https://github.com/HamzaGorcevic/Movies-project",
+      image: netflix,
     },
   ],
 };
